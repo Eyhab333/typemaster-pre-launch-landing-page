@@ -613,6 +613,7 @@ header {
   .hero {
     width: 1110px;
     display: flex;
+    align-items: center;
     margin-bottom: 30px;
   }
 
