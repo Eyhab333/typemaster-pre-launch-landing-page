@@ -348,11 +348,10 @@ header {
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
   /*===================== header */
-  /* header {
-    margin-top: 55px;
+  header {
     width: 689px;
-    margin: 0 auto;
     padding-top: 55px;
+    margin: 0 auto;
     align-items: center;
   }
 
@@ -379,17 +378,16 @@ header {
     line-height: 26px;
     text-transform: uppercase;
     color: #162542;
-  } */
+  }
 
   /*===================== hero ==================*/
 
-  /* main {
-    margin-top: 83px;
+  main {
+    margin-top: 122px;
     padding-bottom: 128px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid green;
     position: relative;
   }
 
@@ -398,7 +396,6 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 100px;
-    border: 2px solid red;
   }
 
   .hero__text {
@@ -452,22 +449,20 @@ header {
   }
 
   .hero__img {
-    border: 2px solid yellow;
-    width: 300px;
+    width: 478px;
     height: 425px;
     border-radius: 20px;
     position: absolute;
-    right: 0;
+    right: -160px;
+    top: -70px;
   }
 
   .hero__img img {
-    height: auto;
     border-radius: 20px;
-    object-position: 100px;
-  } */
+  } 
 
   /*===================== section-mechanical */
-  /* .section-mechanical {
+  .section-mechanical {
     display: grid;
     grid-template-areas: "one1 two2" "three3 three3";
     gap: 72px 30px;
@@ -516,11 +511,11 @@ header {
   .section-mechanical__text p {
     max-width: 398px;
     font-size: 1.6rem;
-  } */
+  }
 
   /*===================== section-highly-grid ===============*/
-  /* .section-highly-grid {
-    display: grid;
+  .section-highly-grid {
+    display: grid; 
     grid-template-areas:
       "one two"
       "three four";
@@ -570,15 +565,12 @@ header {
 
   .grid-item p {
     font-size: 1.6rem;
-  } */
+  }
   /*===================== footer */
-  /* footer {
+  footer {
     text-align: center;
     padding-bottom: 43px;
   }
-
-  footer p {
-  } */
 }
 
 /*############ for-tablet-landscape-up desktop #############*/
@@ -590,47 +582,13 @@ header {
     margin: 0 auto;
     padding-top: 55px;
   }
-
-  .header__logo {
-    height: 40px;
-    width: 40px;
-  }
-
-  .header__link {
-    text-align: center;
-  }
-
-  .header__link a:hover {
-    background: var(--primary);
-    color: white;
-  }
-
-  .header__link a {
-    padding: 16px 27px;
-    background: #e8eff2;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #162542;
-  }
-
   /*===================== hero ==================*/
-
   main {
     margin-top: 83px;
-    padding-bottom: 128px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
   }
 
   .hero {
     width: 1110px;
-    display: flex;
-    align-items: center;
     margin-bottom: 30px;
   }
 
@@ -640,7 +598,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    width: 90px;
+    width: 110px;
     height: 240px;
   }
 
@@ -662,67 +620,37 @@ header {
 
   .hero__text h1 {
     max-width: 445px;
-    margin-bottom: 24px;
     font-weight: 900;
     font-size: 56px;
     line-height: 56px;
-    text-transform: uppercase;
-    color: #162542;
   }
 
   .hero__text p {
     max-width: 445px;
     margin-bottom: 40px;
     font-size: 18px;
-    font-weight: 500;
-  }
-
-  .hero__text--link-and-p {
-    display: flex;
   }
 
   .hero__text--link {
-    text-align: center;
     margin-right: 40px;
-  }
-
-  .hero__text--link a {
-    padding: 16px 27px;
-    background: #f16718;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: white;
   }
 
   .hero__text--link a:hover {
     background: #ff9b62;
   }
 
-  .hero__text--release {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #7b8bad;
-  }
-
   .hero__img {
     width: 540px;
     height: 480px;
-    border-radius: 20px;
-  }
-
-  .hero__img img {
-    border-radius: 20px;
+    position: static;
   }
 
   /*===================== section-mechanical */
   .section-mechanical {
     display: flex;
     align-items: center;
+    grid-template-areas: none;
+    gap: 0px;
     width: 1110px;
     margin-bottom: 168px;
   }
@@ -735,11 +663,6 @@ header {
     background: #f16718;
   }
 
-  .section-mechanical__img1 img {
-    border-radius: 20px;
-    mix-blend-mode: multiply;
-  }
-
   .section-mechanical__img2 {
     border-radius: 20px;
     height: 480px;
@@ -747,28 +670,22 @@ header {
     margin-right: 125px;
   }
 
-  .section-mechanical__img2 img {
-    border-radius: 20px;
-  }
-
   .section-mechanical__text {
     max-width: 255px;
+    display: block;
   }
 
   .section-mechanical__text h2 {
-    max-width: 255px;
-    font-size: 3.2rem;
+    margin-bottom: 27px;
   }
 
   .section-mechanical__text p {
     max-width: 255px;
-    font-size: 1.6rem;
   }
 
   /*===================== section-highly-grid ===============*/
   .section-highly-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     height: 323px;
     width: 1110px;
     gap: 0px 30px;
@@ -776,50 +693,15 @@ header {
 
   .grid-item {
     height: 323px;
-  }
-
-  .one {
-  }
-
-  .two {
-  }
-
-  .three {
-  }
-
-  .four {
+    width: 255px;
   }
 
   .icon {
-    height: 65px;
-    width: 65px;
-    background: #f16718;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 48px;
-  }
-
-  .icon img {
-    width: 30%;
-  }
-
-  .grid-item h3 {
-    font-size: 2.4rem;
-    margin-bottom: 24px;
-  }
-
-  .grid-item p {
-    font-size: 1.6rem;
   }
   /*===================== footer */
   footer {
-    text-align: center;
     padding-bottom: 39px;
-  }
-
-  footer p {
   }
 }
 
